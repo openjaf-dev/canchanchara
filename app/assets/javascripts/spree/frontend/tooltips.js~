@@ -1,0 +1,14 @@
+
+$(document).ready(function(){
+    $("#add-to-cart-button").tooltip({
+
+    });
+});
+
+
+$(document).ready(function(){
+    $("#contact-button").tooltip({
+
+    });
+});
+

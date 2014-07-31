@@ -1,0 +1,12 @@
+<% content_for :sub_menu do %>
+  <ul id="sub_nav" data-hook="admin_product_sub_tabs" class="inline-menu">
+    <%= tab :products, :label => "available", :match_path => '/products' %>
+    <%#= tab 'sell_stop', :label => "sell_stop", :match_path => '/products/sell_stop'%>
+    <%#= tab 'finished', :label => "finished", :match_path => '/products/finished' %>
+    <%= tab :option_types, :match_path => '/option_types' %>
+    <%= tab :properties %>
+    <%= tab :prototypes %>
+    <%= tab :taxonomies %>
+    <%= tab :taxons %>
+  </ul>
+<% end %>

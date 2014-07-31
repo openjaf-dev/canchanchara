@@ -1,0 +1,69 @@
+<h1><%= accurate_title %></h1>
+
+	<div class="row">
+	<div class="columns six alpha" data-hook="product_left_part">
+      <div class="row" data-hook="product_left_part_wrap">
+
+        <div id="product-images" data-hook="product_images">
+          <div id="main-image" data-hook>
+            <%= render :partial => 'spree/products/image' %>
+          </div>
+          <div id="thumbnails" data-hook>
+            <%= render :partial => 'spree/products/thumbnails' %>
+          </div>
+        </div>
+
+        <!-- <div data-hook="product_properties">
+          <%#= render :partial => 'properties' %>
+        </div>
+
+        <div data-hook="promotions">
+          <%#= render :partial => 'promotions' %>
+        </div> -->
+
+      </div>
+	</div>
+
+    <div class="columns ten omega" data-hook="product_right_part">
+		<div class="row" data-hook="product_right_part_wrap">
+
+        <div id="product-description" data-hook="product_description">
+
+          <div itemprop="description" data-hook="description">
+            <%= user_descripasdasdtion(@user) rescue Spree.t(:product_has_no_description) %>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    </div>
+
+<div data-hook="account_summary" class="row">
+  <dl id="user-info" class="columns seven omega alpha">
+    <dt>
+      <%= Spree.t(:user) %>
+      <% if spree_current_user == @user  %>
+          (<%= link_to Spree.t(:edit), spree.edit_account_path %>)
+      <% end %>
+    </dt>
+
+    <dd>
+      <%= Spree.t(:email) %>:<%= @user.email %>
+    </dd>
+    <dd>
+      <%= Spree.t(:name) %>: <%= @user.title %> <%= @user.first_name %> <%= @user.last_name %>
+    </dd>
+    <dd>
+      <%= Spree.t(:phone) %>: <%= @user.phone %>
+    </dd>
+  </dl>
+  <dl id="user-info" class="columns eight">
+    <dt><%= Spree.t(:expositions) %></dt>
+    <dd><%#= @user.email %> (<%#= link_to Spree.t(:edit), spree.edit_account_path %>)</dd>
+  </dl>
+</div>
+
+<div data-hook="user_products">
+  <h3><%= Spree.t(:products) %></h3>
+  <%= render :partial => 'spree/shared/products', :locals => { :products => @user.products } %>
+</div>
