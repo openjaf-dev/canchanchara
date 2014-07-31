@@ -23,3 +23,5 @@ log/
 
 *.png
 *.jpg
+zeus.json
+custom_plan.rb
