@@ -23,3 +23,4 @@ function closeOverlay(name_off) {
 }
 
 
+//= require spree/frontend/spree_i18n

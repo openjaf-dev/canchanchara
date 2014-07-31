@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
+source 'http://gems.github.com'
 #source 'http://localhost/rubygems/'
-ruby '2.1.1'
+#ruby '2.1.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.3'
@@ -62,3 +63,6 @@ gem 'spree', '2.2.1'
 #gem 'spree_auth_devise', :path => '/home/raul/RubymineProjects/github/spree_auth_devise', :branch => '2-2-stable'
 
 gem 'spree_auth_devise', :git => 'https://github.com/spree/spree_auth_devise.git', :branch => '2-2-stable'
+gem 'spree_i18n', github: 'spree/spree_i18n', :branch => '2-2-stable'
+
+
