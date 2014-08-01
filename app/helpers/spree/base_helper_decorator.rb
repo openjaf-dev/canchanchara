@@ -15,7 +15,7 @@ Spree::BaseHelper.class_eval do
             if !product.is_a?(Spree::Variant) && !product.variant_images.empty?
               create_product_image_tag(product.variant_images.first, product, options, style)
             else
-              if product.is_a?(Variant) && !product.product.variant_images.empty?
+              if product.is_a?(Spree::Variant) && !product.product.variant_images.empty?
                 create_product_image_tag(product.product.variant_images.first, product, options, style)
               else
                 image_tag "noimage/#{style}.png", options
