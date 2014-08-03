@@ -6,20 +6,19 @@ module Spree
     @contact = Spree::Contact.new(contact_params)
     if @contact.save
 
-        # ContactMailer.message_email(@message).deliver
-        # flash[:notice] = t('contact_thank_you')
+         ContactMailer.contact_email(@contact).deliver
 
       # TODO aqui tengo que redireccionar para la pagina donde estaba y no para el homepage.
       redirect_to(spree.root_path, :notice => t('spree.contacts.notices.success'))
     else
-      render :new
+      redirect_to(spree.root_path, :notice => t('spree.contacts.notices.error'))
     end
   end
 
   private
 
   def contact_params
-    params.require(:contact).permit( :from , :to, :message)
+    params.require(:contact).permit( :from , :to, :message, :email)
   end
 
   end

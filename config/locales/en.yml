@@ -41,3 +41,8 @@ en:
     finished_products: Finished Products
     contact: Contact
     send: Send
+    contacts:
+      notices:
+        success: The message has been send sucesfylly.
+        error: The messaje could not be send.
+    

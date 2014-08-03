@@ -59,7 +59,7 @@
         <%= form_for [Spree::Contact.new], url: "/contacts" do |c|  %>
         <!--TODO los dos valores de estos hidden me gustar'ia pasarlos para el controlador-->
           <%= c.hidden_field :to,  :value => @product.user.id %>
-          <%= c.text_field :from %>
+          <%= c.email_field :email %>
           <%= c.text_area :message %>
           <%= c.submit Spree.t(:send) %>
         <% end %>
