@@ -24,7 +24,6 @@ GIT
 
 GEM
   remote: https://rubygems.org/
-  remote: http://gems.github.com/
   specs:
     actionmailer (4.0.3)
       actionpack (= 4.0.3)
