@@ -1,7 +1,6 @@
 /openerp_travel/
 
 .bundle
-tmp/
 public/assets/
 .idea/
 public/spree/
