@@ -1,7 +1,6 @@
 /openerp_travel/
 
 .bundle
-tmp/
 public/assets/
 .idea/
 public/spree/
@@ -23,5 +22,8 @@ log/
 
 *.png
 *.jpg
+zeus.json
+custom_plan.rb
+db/development.sqlite3
 .ruby-gemset
 .ruby-version

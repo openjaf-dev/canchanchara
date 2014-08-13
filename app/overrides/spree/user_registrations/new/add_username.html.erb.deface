@@ -1,0 +1,5 @@
+<!-- insert_top "[data-hook='signup_inside_form']"-->
+<p>
+  <%= f.label :username, Spree.t(:username) %><br />
+  <%= f.text_field :username, :class => 'title' %>
+</p>

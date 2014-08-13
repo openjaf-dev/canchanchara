@@ -51,8 +51,6 @@
   </div>
 
 
-
-  <% if spree_current_user %>
   <!--Overlay-->
     <div id="contact_form" class="back_overlay" >
     
@@ -61,7 +59,7 @@
         <%= form_for [Spree::Contact.new], url: "/contacts" do |c|  %>
         <!--TODO los dos valores de estos hidden me gustar'ia pasarlos para el controlador-->
           <%= c.hidden_field :to,  :value => @product.user.id %>
-          <%= c.hidden_field :from,  :value => spree_current_user.id %>
+          <%= c.email_field :email %>
           <%= c.text_area :message %>
           <%= c.submit Spree.t(:send) %>
         <% end %>
@@ -69,9 +67,7 @@
     <a href="#" onclick="closeOverlay('contact_form')">close</a>
     </div>
     <!--Overlay-->
-   <% else %>
-    aqui debe ir el tool tip diciendo que te debes autenticar  
-   <% end %>
+
 
 
 
