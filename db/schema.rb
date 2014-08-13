@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140731160744) do
+ActiveRecord::Schema.define(version: 20140731160745) do
 
   create_table "spree_addresses", force: true do |t|
     t.string   "firstname"
@@ -95,6 +95,7 @@ ActiveRecord::Schema.define(version: 20140731160744) do
     t.text     "message"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "email"
   end
 
   create_table "spree_countries", force: true do |t|
