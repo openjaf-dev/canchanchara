@@ -23,3 +23,5 @@ log/
 
 *.png
 *.jpg
+.ruby-gemset
+.ruby-version
