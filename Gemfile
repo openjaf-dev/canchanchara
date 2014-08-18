@@ -58,22 +58,6 @@ group :development do
   #gem 'debugger'
 end
 
-#gem "rspec-rails", "3.0.1"
-#gem "capybara", "2.3.0"
-#gem "factory_girl", "4.4.0"
-#gem "database_cleaner", "1.3.0"
-#gem "apartment", "0.24.3"
-#gem "houser", "1.0.2"
-#gem "braintree", "2.24.0"
-#gem "warden", "1.2.3"
-#gem "dynamic_form", "1.1.4"
-#gem "bcrypt", "3.1.7"
-
-
-
-
-
-
 
 
 gem 'money', '6.0.1'
@@ -85,4 +69,4 @@ gem 'spree', '2.2.1'
 gem 'spree_auth_devise', :git => 'https://github.com/spree/spree_auth_devise.git', :branch => '2-2-stable'
 gem 'spree_i18n', github: 'spree/spree_i18n', :branch => '2-2-stable'
 
-
+gem 'spree_social', :github => 'spree/spree_social', :branch => '2-2-stable'
