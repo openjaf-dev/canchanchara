@@ -10,6 +10,20 @@ GIT
       spree_core (~> 2.2.0)
 
 GIT
+  remote: git://github.com/spree/spree_social.git
+  revision: b93fc46ba814f0672b748305a294f74034963f6c
+  branch: 2-2-stable
+  specs:
+    spree_social (2.3.0)
+      oa-core
+      omniauth
+      omniauth-facebook
+      omniauth-github
+      omniauth-google-oauth2
+      omniauth-twitter
+      spree_core (~> 2.2.0)
+
+GIT
   remote: https://github.com/spree/spree_auth_devise.git
   revision: f86f2425b7385051aab9030b575994bf116fd16b
   branch: 2-2-stable
@@ -20,18 +34,6 @@ GIT
       devise-encryptable (= 0.1.2)
       json
       multi_json
-      spree_core (~> 2.2.0)
-
-PATH
-  remote: /home/raul/RubymineProjects/github/spree_social
-  specs:
-    spree_social (2.3.0)
-      oa-core
-      omniauth
-      omniauth-facebook
-      omniauth-github
-      omniauth-google-oauth2
-      omniauth-twitter
       spree_core (~> 2.2.0)
 
 GEM
