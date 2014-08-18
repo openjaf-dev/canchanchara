@@ -22,6 +22,18 @@ GIT
       multi_json
       spree_core (~> 2.2.0)
 
+PATH
+  remote: /home/raul/RubymineProjects/github/spree_social
+  specs:
+    spree_social (2.3.0)
+      oa-core
+      omniauth
+      omniauth-facebook
+      omniauth-github
+      omniauth-google-oauth2
+      omniauth-twitter
+      spree_core (~> 2.2.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -109,7 +121,7 @@ GEM
     execjs (2.2.1)
     faraday (0.9.0)
       multipart-post (>= 1.2, < 3)
-    ffaker (1.24.0)
+    ffaker (1.25.0)
     friendly_id (5.0.3)
       activerecord (>= 4.0.0)
     globalize (4.0.2)
@@ -152,6 +164,8 @@ GEM
     multipart-post (2.0.0)
     nokogiri (1.6.3.1)
       mini_portile (= 0.6.0)
+    oa-core (0.3.2)
+    oauth (0.4.7)
     oauth2 (1.0.0)
       faraday (>= 0.8, < 0.10)
       jwt (~> 1.0)
@@ -163,11 +177,23 @@ GEM
       rack (~> 1.0)
     omniauth-facebook (2.0.0)
       omniauth-oauth2 (~> 1.2)
+    omniauth-github (1.1.2)
+      omniauth (~> 1.0)
+      omniauth-oauth2 (~> 1.1)
+    omniauth-google-oauth2 (0.2.5)
+      omniauth (> 1.0)
+      omniauth-oauth2 (~> 1.1)
+    omniauth-oauth (1.0.1)
+      oauth
+      omniauth (~> 1.0)
     omniauth-oauth2 (1.2.0)
       faraday (>= 0.8, < 0.10)
       multi_json (~> 1.3)
       oauth2 (~> 1.0)
       omniauth (~> 1.2)
+    omniauth-twitter (1.0.1)
+      multi_json (~> 1.3)
+      omniauth-oauth (~> 1.0)
     orm_adapter (0.5.0)
     paperclip (3.4.2)
       activemodel (>= 3.0.0)
@@ -321,7 +347,6 @@ DEPENDENCIES
   jbuilder (~> 1.2)
   jquery-rails
   money (= 6.0.1)
-  omniauth-facebook
   pg
   rails (= 4.0.3)
   rails_12factor
@@ -330,6 +355,7 @@ DEPENDENCIES
   spree (= 2.2.1)
   spree_auth_devise!
   spree_i18n!
+  spree_social!
   sqlite3
   therubyracer
   turbolinks

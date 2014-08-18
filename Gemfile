@@ -59,7 +59,6 @@ group :development do
 end
 
 
-gem 'omniauth-facebook'
 
 gem 'money', '6.0.1'
 
@@ -70,4 +69,4 @@ gem 'spree', '2.2.1'
 gem 'spree_auth_devise', :git => 'https://github.com/spree/spree_auth_devise.git', :branch => '2-2-stable'
 gem 'spree_i18n', github: 'spree/spree_i18n', :branch => '2-2-stable'
 
-
+gem 'spree_social', :path => '/home/raul/RubymineProjects/github/spree_social', :branch => '2-2-stable'
