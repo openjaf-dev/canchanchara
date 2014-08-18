@@ -8,7 +8,7 @@ public/spree2/
 public/system/
 vendor/cache/
 log/
-
+tmp/
 *.orig
 *.swp
 *~
